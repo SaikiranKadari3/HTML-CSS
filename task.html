@@ -4,120 +4,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task</title>
+  <title>Iframes Task</title>
   <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-
-    body {
-      width: 100%;
-    }
-
-    .container {
-      margin-top: 10px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      align-items: center;
-      justify-items: center;
-      height: 100vh;
-      width: 100vw;
-    }
-
-    p {
-      font-weight: bolder;
-      text-transform: uppercase;
-      font-style: italic;
-      text-decoration: underline;
-    }
-
-    .first {
-      display: grid;
-      height: 100vh;
-      width: 25vw;
-      align-items: center;
-      justify-items: center;
-    }
-
-    .second {
-      display: grid;
-      height: 100vh;
-      width: 25vw;
-      align-items: center;
-      justify-items: center;
-    }
-
-    .third {
-      display: grid;
-      height: 100vh;
-      width: 25vw;
-      align-items: center;
-      justify-items: center;
-    }
-
-    .fourth {
-      display: grid;
-      height: 100vh;
-      width: 25vw;
-      align-items: center;
-      justify-items: center;
-    }
+   table,tr,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+   } 
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="first">
-      <p>YouTube</p>
-      <p>Maps</p>
-      <p>Websites</p>
-      <p>Audios & Video</p>
-    </div>
-    <div class="second">
-      <iframe src="https://www.youtube.com/embed/qz0aGYrrlhU?si=tY8iJehrz8ArN5fT" title="YouTube video player"
+  <table>
+    <tr>
+      <th>YouTube</th>
+      <td>
+        <iframe src="https://www.youtube.com/embed/st0cyz8orx0?si=Z84Sc1K6svAF33yP" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4711782548593!2d78.44606377388816!3d17.43714810137223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91619a07c2f7%3A0x1dfdab3926922ef3!2sAAA%20Cinemas!5e0!3m2!1sen!2sin!4v1702378821401!5m2!1sen!2sin"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <iframe src="https://10000coders.co/" frameborder="0">
-      </iframe>
-      <audio src="../Audio/leo_ordinary_person.mp3" controls></audio>
-    </div>
-    <div class="third">
-      <iframe src="https://www.youtube.com/embed/wRNinF7YQqQ?si=WESuWm0oCEg4Y6Zj" title="YouTube video player"
+      </td>
+      <td>
+        <iframe src="https://www.youtube.com/embed/st0cyz8orx0?si=Z84Sc1K6svAF33yP" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      </td>
+      <td>
+        <iframe src="https://www.youtube.com/embed/wRNinF7YQqQ?si=WESuWm0oCEg4Y6Zj" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
-      <iframe
+      </td>
+    </tr>
+    <tr>
+      <th>Maps</th>
+      <td>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4711782548593!2d78.44606377388816!3d17.43714810137223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91619a07c2f7%3A0x1dfdab3926922ef3!2sAAA%20Cinemas!5e0!3m2!1sen!2sin!4v1702378821401!5m2!1sen!2sin"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </td>
+      <td>
+        <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.9750367799493!2d78.46311807388763!3d17.412985602069693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975afb4afadd%3A0xf89ea8407df6c84!2sPrasads%20Multiplex!5e0!3m2!1sen!2sin!4v1702378899024!5m2!1sen!2sin"
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-      <iframe src="https://en.wikipedia.org/wiki/Lionel_Messi" frameborder="0">
-      </iframe>
-      <video height="100%" width="100%">
-        <source src="../Video/mixkit-waterfall-in-forest-2213.mp4" controls>
-      </video>
-    </div>
-    <div class="fourth">
-      <iframe src="https://www.youtube.com/embed/st0cyz8orx0?si=Z84Sc1K6svAF33yP" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      <iframe
+      </td>
+      <td>
+        <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0441612798804!2d78.3613743738887!3d17.457600300781188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c8f42a1489%3A0x57fc4e27fb6901b2!2sSarath%20City%20Capital%20Mall!5e0!3m2!1sen!2sin!4v1702378948766!5m2!1sen!2sin"
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <iframe src="https://en.wikipedia.org/wiki/Argentina_national_football_team" frameborder="0" width="100%"
+      </td>
+    </tr>
+    <tr>
+      <th>Websites</th>
+      <td>
+        <iframe src="https://10000coders.co/" frameborder="0">
+        </iframe>
+      </td>
+      <td>
+        <iframe src="https://en.wikipedia.org/wiki/Lionel_Messi" frameborder="0">
+        </iframe>
+      </td>
+      <td>
+        <iframe src="https://en.wikipedia.org/wiki/Argentina_national_football_team" frameborder="0" width="100%"
         height="50%"></iframe>
-      <audio src="../Audio/leo_ordinary_person.mp3" controls></audio>
-    </div>
-  </div>
+      </td>
+    </tr>
+    <tr>
+      <th>Audios & Video</th>
+      <td><audio src="./Audio/leo-english-bgm-61064.mp3" controls></audio></td>
+      <td>
+        <video src="./Video/Birds_7.mp4" controls height="150px"></video>
+      </td>
+      <td><audio src="./Audio/leo-english-bgm-61064.mp3" controls></audio></td>
+    </tr>
+</table>
 </body>
 
 </html>
