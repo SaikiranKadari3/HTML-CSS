@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+<style>
+    a {
+            display: inline-block;
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 2px;
+            text-align: center;
+            height: 20px;
+            margin-left: 10px;
+            background-color: rgba(211, 211, 211, 0.546);
+            color: black;
+        }
+        button {
+            display: inline-block;
+            height: 26px;
+        }
+</style>
+</head>
+<body>
+    <form action="./day12-task.html">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="mail">Email:</label><br>
+            <input type="email" name="mail" id="mail" required placeholder="Enter your email address"><br><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" name="pwd" id="pwd" required placeholder="Enter your password"><br><br>
+            <button type="submit" formaction="./day12-task.html">Submit</button>
+            <a href="./day12-task.html">Create an account?</a>
+        </fieldset>
+    </form>
+</body>
+</html>
