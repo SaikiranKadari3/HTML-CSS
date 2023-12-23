@@ -3,3 +3,98 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    height: 90vh;
+}
+
+table, tr, td {
+    text-align: center;
+}
+
+.mediumo {
+    background-color: mediumorchid;
+    color: white;
+}
+.lime {
+    background-color: lime;
+}
+.aqua {
+    background-color: aqua;
+}
+.aquam {
+    background-color: aquamarine;
+}
+.magenta {
+    background-color: magenta;
+}
+.yellowg {
+    background-color: yellowgreen;
+}
+.yellow {
+    background-color: yellow;
+}
+.whites {
+    background-color: whitesmoke;
+}
+.lemonc {
+    background-color: lemonchiffon;
+}
+.wheat {
+    background-color: wheat;
+}
+.violet{
+    background-color: violet;
+}
+.turq{
+    background-color: turquoise;
+}
+.tomato{
+    background-color: tomato;
+}
+.thistle{
+    background-color: thistle;
+}
+.teal{
+    background-color: teal;
+    color: lightyellow;
+}
+#tan{
+    background-color: tan;
+}
+#steelb{
+    background-color: steelblue;
+    color: wheat;
+}
+#springg{
+    background-color: springgreen;
+}
+#gold{
+    background-color: gold;
+}
+#slateg{
+    background-color: slategrey;
+    color: gold;
+}
+tr:last-child td:nth-child(1) {
+    background-color: slateblue;
+    color: greenyellow;
+}
+tr:last-child td:nth-child(2) {
+    background-color: skyblue;
+}
+tr:last-child td:nth-child(3) {
+    background-color: sienna;
+    color: gainsboro;
+}
+tr:last-child td:nth-child(4) {
+    background-color: sandybrown;
+}
+tr:last-child td:last-child {
+    background-color: salmon;
+}
