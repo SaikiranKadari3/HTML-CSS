@@ -95,7 +95,7 @@ margin: 10px 150px 10px 0px;
     display: inline-block;
 }
 
-.third, .sixth,.ninth{
+.third,.sixth,.ninth{
     display: block;
     border: 1px solid red;
     border-radius: 5%;
