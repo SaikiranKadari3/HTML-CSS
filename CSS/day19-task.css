@@ -108,11 +108,6 @@ margin: 10px 150px 10px 0px;
     color: white;
 }
 
-/* .third , .sixth, .ninth {
-    margin-top: 70px;
-    margin-bottom: 10px;
-} */
-
 .reg {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -208,7 +203,6 @@ margin: 10px 150px 10px 0px;
     height: 100px;
     width: 250px;
     text-align: center;
-    margin-top: 70px;
     margin-left: 50px;
     padding: 10px;
     background-color: lightskyblue;
