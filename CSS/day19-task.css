@@ -30,16 +30,19 @@ margin: 10px 150px 10px 0px;
     text-align: center;
 }
 
+.fblock {
+    display: block;
+}
+
 .sch, .doc, .board, .ticket, .wa {
     display: inline-block;
-    margin-top: 10px;
 }
 
 .sch {
     border: 1px solid yellow;
     text-align: center;
     background-color: yellow;
-    padding: 18px;
+    padding: 26px;
     margin-left: 150px;
     width: 200px;
     height: 150px;
@@ -50,7 +53,7 @@ margin: 10px 150px 10px 0px;
     border: 1px solid yellow;
     text-align: center;
     background-color: rgba(0, 0, 139,0.7);
-    padding: 18px;
+    padding: 26px;
     width: 200px;
     height: 150px;
     color: white;
@@ -60,7 +63,7 @@ margin: 10px 150px 10px 0px;
     border: 1px solid purple;
     text-align: center;
     background-color: rgba(128, 0, 128,0.7);
-    padding: 56px;
+    padding: 26px;
     width: 200px;
     height: 150px;
     color: white;
@@ -70,39 +73,46 @@ margin: 10px 150px 10px 0px;
     border: 1px solid pink;
     text-align: center;
     background-color: pink;
-    padding: 0px;
-    width: 200px;
-    height: 150px;
-    color: white;
-    border-radius: 5%;
-}
-.tick {
-    margin-top: 30px;
-}
-.wa {
-    border: 1px solid lightgreen;
-    text-align: center;
-    background-color: rgb(0, 255, 0);
-    padding: 37px;
+    padding: 8px;
     width: 200px;
     height: 150px;
     color: white;
     border-radius: 5%;
 }
 
-.third, .sixth,.ninth{
+.wa {
+    border: 1px solid lightgreen;
+    text-align: center;
+    background-color: rgb(0, 255, 0);
+    padding: 8px;
+    width: 200px;
+    height: 150px;
+    color: white;
+    border-radius: 5%;
+}
+
+.fib, .sib, .tib {
     display: inline-block;
+}
+
+.third, .sixth,.ninth{
+    display: block;
     border: 1px solid red;
     border-radius: 5%;
     height: 100px;
     width: 250px;
     text-align: center;
     margin-left: 150px;
-    margin-top: 20px;
     padding: 10px;
     background-color: red;
     color: white;
 }
+
+.third , .sixth, .ninth {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
 .reg {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -116,12 +126,12 @@ margin: 10px 150px 10px 0px;
 }
 
 .fourth, .seventh {
-    display: inline-block;
+    display: block;
     border: 1px solid darkslateblue;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: rgba(72, 61, 139,0.8);
     border-radius: 5px;
-    padding: 10px;
+    padding: 0px;
     margin-left: 50px;
     width: 400px;
     text-align: center;
@@ -192,20 +202,17 @@ margin: 10px 150px 10px 0px;
 }
 
 .fifth, .eight,.tenth{
-    display: inline-block;
+    display: block;
     border: 1px solid darkblue;
     border-radius: 5%;
     height: 100px;
     width: 250px;
     text-align: center;
+    margin-top: 70px;
     margin-left: 50px;
     padding: 10px;
     background-color: lightskyblue;
     color: white;
-}
-
-.tenth {
-    margin-left: 505px;
 }
 
 .block {
@@ -241,7 +248,13 @@ margin: 10px 150px 10px 0px;
     text-align: center;
     margin-top: 10px;
     margin-left: 550px;
+    margin-bottom: 10px;
     padding: 10px;
     background-color: brown;
     color: white;
+}
+
+
+.second .material-symbols-outlined {
+    font-size: 50px;
 }
