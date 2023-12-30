@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border: 10px solid #333;
+    width: 560px;
+    height: 560px;
+    margin: 10px auto;
+}
+
+.black {
+    width: 70px;
+    height: 70px;
+    background-color: #777;
+    text-align: center;
+    font-size: 50px;
+}
+.white {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+}
