@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  rgba(211, 211, 211,0.2);
+    overflow-x: hidden;
+    position: absolute
+}
+
+.navbar {
+    margin-left: 5%;
+    margin-right: 4%;
+    background-color: orange;
+    position: sticky;
+    top: 5px;
+    z-index: 9999;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 250px;
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    font-weight: 600;
+    padding: 10px;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.list {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main {
+    display: inline-block;
+    width: 100vw;
+    margin-top: 15px;
+}
+
+.content {
+    display: inline-block;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.qstn {
+    display: block;
+    margin-bottom: 25px;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.heading {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.section p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+span {
+    color: #28a745;;
+}
+
+.int {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    width: max-content;
+    border-radius: 10px;
+    padding: 20px 30px;
+    background-color: #ff6d00;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 40px 0 rgba(0,0,0,.37);
+    margin-bottom: 20px;
+}
+
+.button p {
+    font-weight: bold;
+}
+
+.image {
+    display: inline-block;
+    margin-left: 60px;   
+}
+
+.article {
+    width: max-content;
+    margin: 30px auto;
+}
+
+.sh {
+    text-align: center;
+}
+
+ul li {
+    line-height: 2;
+    font-size: 20px;
+    list-style-position: inside;
+}
+
+.footer {
+    width: max-content;
+    padding: 2px;
+    background-color: lightskyblue;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: fixed;
+    right:0px;
+    bottom:0px;
+}
+
+.foot {
+    color: black;
+}
