@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    padding: 10px;
+}
+
+.img1 {
+    position: relative;
+    left: 100px;
+    top: 50px;
+    border-radius: 50%;
+}
+.img2 {
+    position: relative;
+    left: 300px;
+    top: 50px;
+    border-radius: 50%;
+}
+.img3 {
+    position: relative; 
+    top: 50px;
+    left: 500px;
+    border-radius: 50%;
+}
+.img4 {
+    position: relative;
+    top: 350px;
+    left: -450px;
+    border-radius: 50%;
+}
+.img5 {
+    position: relative;
+    top: 350px;
+    left: -250px;
+    border-radius: 50%;
+}
+
+.itm1 {
+    border: 1px solid black;
+    position: fixed;
+    background-color: black;
+    color: whitesmoke;
+    top: 270px;
+    left: 190px;
+    padding: 2px;
+}
+.itm2 {
+    border: 1px solid black;
+    position: fixed;
+    background-color: black;
+    color: whitesmoke;
+    top: 270px;
+    left: 645px;
+    padding: 2px;
+}
+.itm3 {
+    border: 1px solid black;
+    position: fixed;
+    background-color: black;
+    color: whitesmoke;
+    top: 270px;
+    left: 1120px;
+    padding: 2px;
+}
+.itm4 {
+    border: 1px solid black;
+    position: fixed;
+    background-color: black;
+    color: whitesmoke;
+    bottom: 60px;
+    left: 415px;
+    padding: 2px;
+}
+.itm5 {
+    border: 1px solid black;
+    position: fixed;
+    background-color: black;
+    color: whitesmoke;
+    bottom: 60px;
+    left: 870px;
+    padding: 2px;
+}
