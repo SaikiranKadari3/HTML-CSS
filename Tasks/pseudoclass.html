@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+      label {
+        margin-right: 10px;
+      }
+
+      body {
+        width: max-content;
+        margin: 30px auto;
+      }
+
+      div {
+        margin: 30px auto;
+        height: 500px;
+        width: 600px;
+        border: 1px solid black;
+      }
+
+      #messi:checked ~ div {
+        background-image: url(../Images/GOAL_-_Blank_WEB_-_Facebook_-_2023-06-13T135350.847.webp);
+        background-size: 100% 100%;
+      }
+      #angel:checked ~ div {
+        background-image: url(../Images/di_maria.jpg);
+        background-size: 100% 100%;
+      }
+      #alvarez:checked ~ div {
+        background-image: url(../Images/alvarez.jpg_large);
+        background-size: 100% 100%;
+      }
+      #enzo:checked ~ div {
+        background-image: url(../Images/Enzo-Fernandez.jpeg);
+        background-size: 100% 100%;
+      }
+      #rdp:checked ~ div {
+        background-image: url(../Images/de_paul.jpeg);
+        background-size: 100% 100%;
+      }
+
+      .one,
+      .two,
+      .three,
+      .four,
+      .five {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        background-image: url(../Images/expressionless-face.png);
+        background-size: 100% 100%;
+      }
+
+      .one:hover,
+      .two:hover,
+      .three:hover,
+      .four:hover,
+      .five:hover {
+        background-image: url(../Images/grinning-face-with-smiling-eyes.png);
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="players" id="messi" />
+    <label for="messi">Lionel Messi</label>
+    <input type="radio" name="players" id="angel" />
+    <label for="angel">Angel Di Maria</label>
+    <input type="radio" name="players" id="alvarez" />
+    <label for="alvarez">Julian Alvarez</label>
+    <input type="radio" name="players" id="enzo" />
+    <label for="enzo">Enzo Fernandez</label>
+    <input type="radio" name="players" id="rdp" />
+    <label for="rdp">Rodrigo De Paul</label>
+    <div></div>
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+    <span class="four"></span>
+    <span class="five"></span>
+  </body>
+</html>
