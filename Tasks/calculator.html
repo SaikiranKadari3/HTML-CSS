@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        width: max-content;
+        margin: 50px auto;
+        font-size: 35px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        border: 1px solid black;
+        background-color: aquamarine;
+      }
+      .screen {
+        margin: 5%;
+        flex-basis: 90%;
+        border: 1px solid black;
+        text-align: end;
+        padding: 10px 10px 10px 0;
+        background-color: rgba(188, 205, 149, 0.9);
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 1 100%;
+        gap: 10px;
+        margin: 10px 10px;
+      }
+      .button {
+        display: flex;
+        flex: 0 0 22%;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: powderblue;
+      }
+      .buttons span:nth-child(1),
+      .buttons span:nth-child(2),
+      .buttons span:nth-child(3),
+      .buttons span:nth-child(4),
+      .buttons span:nth-child(8),
+      .buttons span:nth-child(12),
+      .buttons span:nth-child(16),
+      .buttons span:nth-child(19) {
+        background-color: tomato;
+        color: whitesmoke;
+      }
+      .buttons span:nth-child(1):hover,
+      .buttons span:nth-child(2):hover,
+      .buttons span:nth-child(3):hover,
+      .buttons span:nth-child(4):hover,
+      .buttons span:nth-child(8):hover,
+      .buttons span:nth-child(12):hover,
+      .buttons span:nth-child(16):hover,
+      .buttons span:nth-child(19):hover {
+        background-color: gold;
+        color: black;
+      }
+      .zero-btn {
+        flex: 0 0 47%;
+      }
+      .button:hover {
+        cursor: pointer;
+        background-color: whitesmoke;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <span>999 * 9 - 927<br />= 8064</span>
+      </div>
+      <div class="buttons">
+        <span class="button">AC</span>
+        <span class="button">+/-</span>
+        <span class="button">%</span>
+        <span class="button">/</span>
+        <span class="button">7</span>
+        <span class="button">8</span>
+        <span class="button">9</span>
+        <span class="button">*</span>
+        <span class="button">4</span>
+        <span class="button">5</span>
+        <span class="button">6</span>
+        <span class="button">-</span>
+        <span class="button">1</span>
+        <span class="button">2</span>
+        <span class="button">3</span>
+        <span class="button">+</span>
+        <span class="button zero-btn">0</span>
+        <span class="button">.</span>
+        <span class="button">=</span>
+      </div>
+    </div>
+  </body>
+</html>
