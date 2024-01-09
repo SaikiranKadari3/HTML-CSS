@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        margin: 3px 100px;
+      }
+      .opt {
+        display: inline-block;
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        border: 1px solid black;
+        background-color: #ccc;
+        margin-right: 100px;
+      }
+      label {
+        display: inline-block;
+        margin: 1px;
+        border: 1px solid black;
+        color: whitesmoke;
+        background-color: gray;
+        width: 350px;
+        text-align: center;
+        padding: 4px;
+      }
+      label:hover {
+        cursor: pointer;
+        background-color: black;
+      }
+      .result {
+        display: inline-block;
+        background-color: lightskyblue;
+        height: fit-content;
+        width: 100px;
+        padding: 10px;
+      }
+      .container .opt #none:checked .result {
+        transform: scale(2, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="opt">
+        <input type="radio" name="transform" id="none" />
+        <label for="none">Transform: none;</label><br />
+        <input type="radio" name="transform" id="rot" />
+        <label for="rot">Transform: rotate(10deg);</label><br />
+        <input type="radio" name="transform" id="rot45" />
+        <label for="rot45">Transform: rotate(45deg);</label><br />
+        <input type="radio" name="transform" id="rotx" />
+        <label for="rotx">Transform: rotateX(45deg);</label><br />
+        <input type="radio" name="transform" id="rotx100" />
+        <label for="rotx100">Transform: rotateX(100deg);</label><br />
+        <input type="radio" name="transform" id="roty45" />
+        <label for="roty45">Transform: rotateY(45deg);</label><br />
+        <input type="radio" name="transform" id="roty80" />
+        <label for="roty80">Transform: rotateY(80deg);</label><br />
+        <input type="radio" name="transform" id="skew20" />
+        <label for="skew20">Transform: skew(20deg, 20deg);</label><br />
+        <input type="radio" name="transform" id="skew30" />
+        <label for="skew30">Transform: skew(30deg, 30deg);</label><br />
+        <input type="radio" name="transform" id="skewx30" />
+        <label for="skewx30">Transform: skewX(30deg);</label><br />
+        <input type="radio" name="transform" id="skewx40" />
+        <label for="skewx40">Transform: skewX(40deg);</label><br />
+        <input type="radio" name="transform" id="skewy30" />
+        <label for="skewy30">Transform: skewY(30deg);</label><br />
+        <input type="radio" name="transform" id="skewY40" />
+        <label for="skewY40">Transform: skewY(40deg);</label><br />
+        <input type="radio" name="transform" id="tran" />
+        <label for="tran">Transform: translate(20px, 10px);</label><br />
+        <input type="radio" name="transform" id="tran20" />
+        <label for="tran20">Transform: translate(20px, 20px);</label><br />
+        <input type="radio" name="transform" id="scale" />
+        <label for="scale">Transform: scale(2, 2);</label><br />
+        <input type="radio" name="transform" id="scale2" />
+        <label for="scale2">Transform: scale(2, 3);</label><br />
+        <input type="radio" name="transform" id="mat1" />
+        <label for="mat1">Transform: matrix(0.866,0.7,-0.8,0.866,0,0);</label
+        ><br />
+        <input type="radio" name="transform" id="mat2" />
+        <label for="mat2">Transform: matrix(0.586,0.8,-0.8,0.586,0,0);</label
+        ><br />
+        <input type="radio" name="transform" id="mat3" />
+        <label for="mat3">Transform: matrix(0.586,0.8,-0.8,0.586,40,30);</label
+        ><br />
+        <div class="result">
+          See what different transform values does with this blue DIV element.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
