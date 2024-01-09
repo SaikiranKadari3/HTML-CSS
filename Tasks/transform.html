@@ -13,10 +13,9 @@
         margin: 3px 100px;
       }
       .opt {
-        display: inline-block;
         height: fit-content;
-        width: fit-content;
-        padding: 5px;
+        width: 80%;
+        padding: 10px;
         border: 1px solid black;
         background-color: #ccc;
         margin-right: 100px;
@@ -36,14 +35,93 @@
         background-color: black;
       }
       .result {
-        display: inline-block;
-        background-color: lightskyblue;
-        height: fit-content;
-        width: 100px;
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        width: 80px;
+        height: 20%;
         padding: 10px;
+        background-color: lightblue;
+        text-align: center;
       }
-      .container .opt #none:checked .result {
+      #none:checked ~ .result {
+        transform: none;
+      }
+      #rot:checked ~ .result {
+        transform: rotate(10deg);
+        transition: all 1s;
+      }
+      #rot45:checked ~ .result {
+        transform: rotate(45deg);
+        transition: all 1s;
+      }
+      #rotx:checked ~ .result {
+        transform: rotateX(45deg);
+        transition: all 1s;
+      }
+      #rotx100:checked ~ .result {
+        transform: rotateX(100deg);
+        transition: all 1s;
+      }
+      #roty45:checked ~ .result {
+        transform: rotateY(45deg);
+        transition: all 1s;
+      }
+      #roty80:checked ~ .result {
+        transform: rotateY(80deg);
+        transition: all 1s;
+      }
+      #skew20:checked ~ .result {
+        transform: skew(20deg, 20deg);
+        transition: all 1s;
+      }
+      #skew30:checked ~ .result {
+        transform: skew(30deg, 30deg);
+        transition: all 1s;
+      }
+      #skewx30:checked ~ .result {
+        transform: skewX(30deg);
+        transition: all 1s;
+      }
+      #skewx40:checked ~ .result {
+        transform: skewX(40deg);
+        transition: all 1s;
+      }
+      #skewy30:checked ~ .result {
+        transform: skewY(30deg);
+        transition: all 1s;
+      }
+      #skewY40:checked ~ .result {
+        transform: skewY(40deg);
+        transition: all 1s;
+      }
+      #tran:checked ~ .result {
+        transform: translate(20px, 10px);
+        transition: all 1s;
+      }
+      #tran20:checked ~ .result {
+        transform: translate(20px, 20px);
+        transition: all 1s;
+      }
+      #scale:checked ~ .result {
         transform: scale(2, 2);
+        transition: all 1s;
+      }
+      #scale2:checked ~ .result {
+        transform: scale(2, 3);
+        transition: all 1s;
+      }
+      #mat1:checked ~ .result {
+        transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0);
+        transition: all 1s;
+      }
+      #mat2:checked ~ .result {
+        transform: matrix(0.586, 0.8, -0.8, 0.586, 0, 0);
+        transition: all 1s;
+      }
+      #mat3:checked ~ .result {
+        transform: matrix(0.586, 0.8, -0.8, 0.586, 40, 30);
+        transition: all 1s;
       }
     </style>
   </head>
@@ -93,8 +171,9 @@
         <input type="radio" name="transform" id="mat3" />
         <label for="mat3">Transform: matrix(0.586,0.8,-0.8,0.586,40,30);</label
         ><br />
+
         <div class="result">
-          See what different transform values does with this blue DIV element.
+          See what different transform values does with this DIV element.
         </div>
       </div>
     </div>
