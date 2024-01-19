@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 376px) {
   .main {
     margin: 5px 3px;
   }
@@ -36,7 +36,7 @@
   }
   .nav-left {
     column-gap: 0px;
-    margin: 3px;
+    margin: 5px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@
   }
   .nav-right {
     column-gap: 0px;
-    margin: 3px;
+    margin: 5px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -204,5 +204,111 @@
   .copyright span {
     color: rgba(188, 192, 196, 0.74);
     font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  .main {
+    margin: 10px;
+    justify-content: space-around;
+  }
+  .main-one {
+    column-gap: 10px;
+  }
+  .bms-logo {
+    width: 45px;
+  }
+  form {
+    column-gap: 0px;
+    padding: 3px;
+  }
+  .fa-search {
+    display: none !important;
+  }
+  #searchbar {
+    width: 70px;
+    padding: 5px;
+    padding-right: 0px;
+    height: 15px;
+  }
+  .main-two {
+    column-gap: 10px;
+  }
+  #location {
+    font-size: 14px;
+    padding: 0px;
+  }
+  .main-two button {
+    padding: 0px 10px 2px;
+    font-weight: 400;
+  }
+  .hamburger {
+    width: 20px;
+    height: auto;
+  }
+  .nav {
+    display: grid;
+  }
+  .nav-left {
+    column-gap: 0px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-right {
+    column-gap: 0px;
+    margin: 0px 10px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero {
+    display: grid;
+    margin: 25px 10px 0px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 15px;
+    row-gap: 0px;
+  }
+  .poster {
+    width: 174px;
+    height: auto;
+  }
+  .movie-card:hover {
+    /* transform: scale(1.1, 1.05); */
+    transform: none;
+  }
+  .movie-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 174px;
+  }
+  .movie-name {
+    margin: 5px 0 0;
+    padding: 0 0 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+  .genre {
+    padding: 0 0 0 4px;
+    font-size: 12px;
+    margin-bottom: 0px;
+    opacity: 0.8;
+  }
+  .banner {
+    margin: 25px 10px;
   }
 }
