@@ -311,4 +311,41 @@
   .banner {
     margin: 25px 10px;
   }
+  .live-events {
+    margin: 0 10px;
+  }
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .event-poster:hover {
+    /* transform: scale(1.1, 1.05); */
+    transform: none;
+  }
+  .premieres {
+    margin-top: 25px;
+  }
+  .premier-logo {
+    padding: 0 10px;
+  }
+  .premier-content {
+    margin: 0 10px;
+  }
+  .premier-content h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .premier-content p {
+    font-size: 10px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  .premier-movies {
+    margin: 0 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .premier-movie-card:hover {
+    /* transform: scale(1.1, 1.05); */
+    transform: none;
+  }
 }
