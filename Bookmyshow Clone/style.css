@@ -13,7 +13,7 @@ body {
 .main {
   display: flex;
   background-color: transparent;
-  margin: 0px 50px;
+  margin: 10px 50px;
   align-items: center;
   justify-content: space-between;
   height: fit-content;
@@ -43,7 +43,7 @@ form {
 }
 
 #searchbar {
-  width: 500px;
+  width: 400px;
   border: none;
   padding: 5px;
 }
@@ -81,7 +81,7 @@ form {
   cursor: pointer;
 }
 
-.menu {
+.hamburger {
   cursor: pointer;
 }
 

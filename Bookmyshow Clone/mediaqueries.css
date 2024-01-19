@@ -20,7 +20,7 @@
     column-gap: 5px;
   }
   #location {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px;
   }
   .main-two button {
@@ -153,9 +153,7 @@
     transform: none;
   }
   .event-name {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 5px;
+    font-size: 16px;
     text-align: center;
   }
   .event-loc {
@@ -165,6 +163,12 @@
   .first {
     margin: 5px;
     gap: 20px;
+  }
+  .first-left p {
+    font-size: 12px;
+  }
+  .show {
+    font-size: 12px;
   }
   .first button {
     display: block;
@@ -182,6 +186,10 @@
     /* transform: scale(1.1); */
     transform: none;
   }
+  hr {
+    height: 2px;
+    background-color: rgba(188, 192, 196, 0.74);
+  }
   .accounts {
     display: flex;
     gap: 10px;
@@ -198,16 +206,14 @@
     width: 40px;
     height: 40px;
   }
-  .twitter {
-    border-radius: 50%;
-  }
   .copyright span {
-    color: rgba(188, 192, 196, 0.74);
     font-size: 9px;
   }
 }
 
-@media screen and (min-width: 377px) and (max-width: 426px) {
+/*********************************/
+
+@media screen and (min-width: 377px) and (max-width: 500px) {
   .main {
     margin: 10px;
     justify-content: space-around;
@@ -269,17 +275,16 @@
     display: grid;
     margin: 25px 10px 0px;
   }
-
   .heading h2 {
     font-size: 20px;
     margin-bottom: 5px;
   }
-
   .movies {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     column-gap: 15px;
     row-gap: 0px;
+    justify-items: center;
   }
   .poster {
     width: 174px;
@@ -347,5 +352,188 @@
   .premier-movie-card:hover {
     /* transform: scale(1.1, 1.05); */
     transform: none;
+  }
+  .outdoor {
+    margin: 25px 10px;
+  }
+  .outdoor h2 {
+    font-size: 20px;
+  }
+  .outdoor .new {
+    font-size: 12px;
+  }
+  .outdoor-events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .event-card:hover {
+    /* transform: scale(1.1, 1.05); */
+    transform: none;
+  }
+  .event-name {
+    font-size: 16px;
+  }
+  .event-loc {
+    opacity: 0.7;
+  }
+  footer {
+    background-color: rgb(49, 48, 53);
+  }
+  .first {
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+  }
+  .first-left {
+    justify-content: space-evenly;
+  }
+  .first-left p {
+    font-size: 12px;
+  }
+  .show {
+    font-size: 12px;
+  }
+  .first button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    padding: 25px 0px;
+  }
+  .second p {
+    margin: 0;
+    text-transform: uppercase;
+    color: rgba(188, 192, 196, 0.74);
+  }
+  .second svg {
+    fill: rgba(188, 192, 196, 0.74);
+  }
+  .care {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  svg:hover,
+  .second p:hover {
+    cursor: pointer;
+    color: white;
+    fill: white;
+  }
+  .care:hover,
+  .booking:hover,
+  .newsletter:hover {
+    /* transform: scale(1.1); */
+    transform: none;
+  }
+  .booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .second p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  hr {
+    height: 2px;
+    background-color: rgba(188, 192, 196, 0.74);
+  }
+  .twitter,
+  .fb,
+  .linkedin,
+  .instagram,
+  .youtube,
+  .pinterest {
+    width: 40px;
+    height: 40px;
+  }
+  .copyright span {
+    font-size: 10px;
+  }
+}
+
+/*********************************/
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .main {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-one {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .bms-logo {
+    width: 70px;
+  }
+  form {
+    width: 100%;
+  }
+  #searchbar {
+    width: 100%;
+    padding: 0px 5px 0px;
+  }
+  .main-two {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #location {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .main-two button {
+    padding: 4px 10px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .hamburger {
+    width: 30px;
+    height: auto;
+  }
+  .nav {
+    display: grid;
+  }
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 10px 15px;
+  }
+  .nav-right {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 10px 15px;
+    margin-top: 0px;
+  }
+  .hero {
+    margin: 25px 15px;
+  }
+  .heading h2 {
+    font-size: 22px;
   }
 }
