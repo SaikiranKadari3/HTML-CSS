@@ -472,11 +472,21 @@ hr {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
   padding-bottom: 25px;
 }
 
 .twitter {
   border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.fb,
+.linkedin,
+.instagram,
+.youtube,
+.pinterest {
   width: 48px;
   height: 48px;
 }
