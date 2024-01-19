@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*HEADER SECTION*/
+
+.main {
+  display: flex;
+  background-color: transparent;
+  margin: 0px 50px;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.main-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.bms-logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+form {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+#searchbar {
+  width: 500px;
+  border: none;
+  padding: 5px;
+}
+
+#searchbar::placeholder {
+  opacity: 0.5;
+}
+
+#searchbar:focus {
+  outline: none;
+}
+
+.main-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+#location {
+  border: none;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.main-two button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 09);
+  color: white;
+  padding: 5px 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+  background-color: #f9f9f9;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  column-gap: 10px;
+  margin: 0px;
+  padding: 0px;
+  margin: 10px 50px;
+}
+
+.links {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/* SLIDES */
+
+.slides {
+  padding: 10px;
+  margin: 0px auto;
+  background-color: #f0f0f0;
+}
+
+.slides img {
+  border-radius: 10px;
+}
+
+/* MOVIES SECTION */
+
+.hero {
+  display: grid;
+  margin: 25px 50px 0;
+}
+
+.heading h2 {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.movie-card {
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.1, 1.05);
+}
+
+.poster {
+  border-radius: 10px;
+  width: 100%;
+  /* display: flex; */
+  height: auto;
+}
+
+.movie-name {
+  margin: 10px 0 0 0;
+  padding: 0 0 0 4px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.genre {
+  padding: 0 0 0 4px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* BOOKMYSHOW STREAM BANNER SECTION*/
+
+.banner {
+  margin: 50px 50px;
+}
+
+.stream-banner {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* LIVE EVENTS SECTION */
+
+.live-events {
+  margin: 0 50px;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.event-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.event-poster:hover {
+  transform: scale(1.1, 1.05);
+}
+
+/* PREMIERES SECTION */
+
+.premieres {
+  margin-top: 50px;
+  background-color: rgb(43, 49, 72);
+}
+
+.premier-logo {
+  padding: 0 50px;
+  width: 100%;
+}
+
+.premier-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0 50px;
+}
+
+.premier-content h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.premier-content p {
+  font-size: 14px;
+}
+
+.premier-movies {
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.premier-movie-card {
+  display: grid;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.premier-movie-card:hover {
+  transform: scale(1.1, 1.05);
+}
+
+.premier-movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.premier-name {
+  font-size: 20px;
+}
+
+.lang {
+  opacity: 0.7;
+}
+
+/* OUTDOOR EVENTS*/
+
+.outdoor {
+  margin: 50px;
+}
+
+.outdoor h2 {
+  font-size: 24px;
+}
+
+.outdoor .new {
+  background-color: red;
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+.outdoor-events {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.oe-poster {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  transform: scale(1.1, 1.05);
+}
+
+.event-name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.event-loc {
+  opacity: 0.8;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: rgb(49, 48, 53);
+}
+
+.first {
+  color: white;
+  margin: 0px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.first-left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.first-left p {
+  margin: 0;
+}
+
+.show {
+  font-weight: bold;
+}
+
+.first button {
+  height: fit-content;
+  border: none;
+  background-color: rgba(236, 94, 113);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+  padding: 25px 0px;
+}
+
+.second p {
+  margin: 0;
+  text-transform: uppercase;
+  color: rgba(188, 192, 196, 0.74);
+}
+
+.second svg {
+  fill: rgba(188, 192, 196, 0.74);
+}
+
+.care {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg:hover,
+.second p:hover {
+  cursor: pointer;
+  color: white;
+  fill: white;
+}
+
+.care:hover,
+.booking:hover,
+.newsletter:hover {
+  transform: scale(1.1);
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.third,
+.fourth {
+  display: grid;
+  margin: 10px 0 0 10px;
+}
+
+.third p,
+.fourth p {
+  color: rgba(188, 192, 196, 0.74);
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.help-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.help-links a {
+  text-decoration: none;
+  color: rgba(188, 192, 196, 0.74);
+  font-size: 12px;
+}
+
+.help-links a:hover {
+  color: white;
+}
+
+.fifth {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+  padding-bottom: 30px;
+}
+
+hr {
+  height: 1px;
+  background-color: white;
+  width: 100%;
+}
+
+.accounts a {
+  text-decoration: none;
+}
+
+.accounts {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.twitter {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  text-align: center;
+}
+
+.copyright span {
+  color: rgba(188, 192, 196, 0.74);
+  font-size: 11px;
+}
+
+.fa-arrow-up {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.btt {
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
