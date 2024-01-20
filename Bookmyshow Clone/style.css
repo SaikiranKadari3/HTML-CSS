@@ -1,3 +1,86 @@
+.modal-content {
+  width: 300px !important;
+  height: 500px;
+}
+
+.modal-body {
+  margin: 10px auto;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+
+.ro-7 {
+  display: grid;
+}
+
+.ro-1,
+.ro-5 {
+  text-align: center;
+}
+
+.ro-2 span,
+.ro-3 span,
+.ro-4 span {
+  font-weight: normal;
+}
+
+.google-button,
+.email-button,
+.apple-button {
+  border: 1px solid black;
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.google,
+.email,
+.apple {
+  position: relative;
+  bottom: -3px;
+}
+
+#flag {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#flag::placeholder {
+  font-size: 12.5px;
+}
+
+#flag:focus {
+  outline: none;
+}
+
+.tel {
+  font-size: 13px;
+}
+
+.main-two a {
+  text-decoration: none;
+  color: black;
+}
+
+.ro-2 a:hover,
+.ro-3 a:hover,
+.ro-4 a:hover {
+  background-color: rgb(229, 229, 229);
+  border-color: rgb(229, 229, 229);
+  cursor: pointer;
+}
+
+.ro-7 button {
+  background-color: rgb(248, 68, 100);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -71,13 +154,13 @@ form {
   padding: 10px;
 }
 
-.main-two button {
+.main-two .signin {
   border: none;
   border-radius: 5px;
   background-color: rgba(255, 0, 0, 09);
   color: white;
-  padding: 5px 13px;
-  font-weight: 500;
+  padding: 5px 10px;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -131,12 +214,8 @@ form {
 
 /* MOVIES SECTION */
 
-/* .hero {
-  display: grid;
-  margin: 25px 50px 0;
-} */
 .hero {
-  margin: 25px 50px 0px;
+  margin: 25px 50px;
   display: grid;
 }
 .heading h2 {
@@ -153,16 +232,17 @@ form {
 } */
 .movies {
   display: grid;
-  grid-template-columns: repeat(5, 200px);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
+  column-gap: 10px;
 }
 .movie-card {
   cursor: pointer;
 }
 
 .movie-card:hover {
-  transform: scale(1.1, 1.05);
+  transform: scale(1.02, 1.02);
 }
 
 /* .poster {
@@ -177,6 +257,7 @@ form {
   display: grid;
   border-radius: 10px;
 }
+
 /* .movie-name {
   margin: 10px 0 0 0;
   padding: 0 0 0 4px;
@@ -185,13 +266,12 @@ form {
   font-size: 15px;
 } */
 .movie-name {
-  width: 200px;
   display: grid;
-  margin: 0px 0 0 0;
+  margin: 0px;
+  margin-top: 5px;
   padding: 0 0 0 4px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 18px;
 }
 /* .genre {
   padding: 0 0 0 4px;
@@ -202,9 +282,12 @@ form {
   display: flex;
   word-break: break-all;
   padding: 0 0 0 4px;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: 400;
+  margin-bottom: 0px;
 }
+
 /* BOOKMYSHOW STREAM BANNER SECTION*/
 
 .banner {
@@ -219,7 +302,7 @@ form {
 /* LIVE EVENTS SECTION */
 
 .live-events {
-  margin: 0 50px;
+  margin: 50px;
 }
 
 .events {
@@ -236,7 +319,7 @@ form {
 }
 
 .event-poster:hover {
-  transform: scale(1.1, 1.05);
+  transform: scale(1.02, 1.02);
 }
 
 /* PREMIERES SECTION */
@@ -282,7 +365,7 @@ form {
 }
 
 .premier-movie-card:hover {
-  transform: scale(1.1, 1.05);
+  transform: scale(1.02, 1.02);
 }
 
 .premier-movie-card img {
@@ -292,11 +375,16 @@ form {
 }
 
 .premier-name {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .lang {
-  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
 }
 
 /* OUTDOOR EVENTS*/
@@ -336,17 +424,182 @@ form {
 }
 
 .event-card:hover {
-  transform: scale(1.1, 1.05);
+  transform: scale(1.02, 1.02);
 }
 
 .event-name {
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
   margin-top: 5px;
 }
 
 .event-loc {
+  font-weight: 400;
+  font-size: 16px;
   opacity: 0.8;
+}
+
+/* PLAYS SECTION */
+
+.plays {
+  margin: 0px 50px 50px;
+}
+
+.plays h2 {
+  font-size: 24px;
+}
+
+.latest-plays {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+}
+
+.play-card {
+  text-decoration: none;
+  color: black;
+}
+
+.play-card:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.row-1,
+.row-2,
+.row-3,
+.play-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.play-poster {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.play-name {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 4px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.play-lang {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+  padding-left: 4px;
+}
+
+/* SPORTS SECTION */
+
+.sports {
+  margin: 0px 50px 50px;
+}
+
+.sports h2 {
+  font-size: 24px;
+}
+
+.latest-sports {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+}
+
+.sports-card {
+  text-decoration: none;
+  color: black;
+}
+
+.sports-card:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.row-1,
+.row-2,
+.row-3,
+.sports-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sports-poster {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.sports-name {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 4px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.sports-venue {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+  padding-left: 4px;
+}
+
+/* ACTIVITIES SECTION */
+
+.activities {
+  margin: 0px 50px 50px;
+}
+
+.activities h2 {
+  font-size: 24px;
+}
+
+.latest-activities {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+}
+
+.activities-card {
+  text-decoration: none;
+  color: black;
+}
+
+.activities-card:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.row-1,
+.row-2,
+.row-3,
+.activities-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.activities-poster {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.activities-name {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 4px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.activities-venue {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+  padding-left: 4px;
 }
 
 /* FOOTER SECTION */
@@ -486,7 +739,7 @@ svg:hover,
 }
 
 hr {
-  height: 1px;
+  height: 2px;
   background-color: white;
   width: 100%;
 }
