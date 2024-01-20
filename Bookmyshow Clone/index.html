@@ -12,8 +12,8 @@
       href="../Images/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../Bookmyshow Clone/style.css" />
-    <link rel="stylesheet" href="../Bookmyshow Clone/mediaqueries.css" />
+    <link rel="stylesheet" href="../CSS/show.css" />
+    <link rel="stylesheet" href="../CSS/media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -71,7 +71,101 @@
           <option value="New Delhi">New Delhi</option>
           <option value="Kolkata">Kolkata</option>
         </select>
-        <button type="button">Sign in</button>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          class="signin"
+        >
+          Sign in
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="ro-1">
+                  <span class="get"
+                    >Get Started
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      style="
+                        position: absolute;
+                        right: 20px;
+                        background-color: none;
+                      "
+                    ></button
+                  ></span>
+                </div>
+                <div class="ro-2">
+                  <a class="google-button">
+                    <img
+                      src="../Images/google.png"
+                      alt="google logo"
+                      class="google"
+                    />
+                    <span>Continue with Google</span>
+                  </a>
+                </div>
+                <div class="ro-3">
+                  <a class="email-button">
+                    <img
+                      src="../Images/envelope.png"
+                      alt="envelope logo"
+                      class="email"
+                    />
+                    <span>Continue with Email</span>
+                  </a>
+                </div>
+                <div class="ro-4">
+                  <a class="apple-button">
+                    <img
+                      src="../Images/apple-logo.png"
+                      alt="apple-logo logo"
+                      class="apple"
+                    />
+                    <span>Continue with Apple</span>
+                  </a>
+                </div>
+                <div class="ro-5"><p>OR</p></div>
+                <div class="ro-6">
+                  <div class="input">
+                    <img
+                      src="../Images/india-flag.png"
+                      alt="India Flag"
+                      class="flag"
+                    />
+                    <span class="tel">+91</span>
+                    <input
+                      type="search"
+                      id="flag"
+                      name="number"
+                      placeholder="Continue with mobile number"
+                    />
+                  </div>
+                </div>
+                <div class="ro-7">
+                  <button>Continue</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button type="button" class="signin">Sign in</button> -->
         <span
           ><img
             src="../Images/hamburger.png"
@@ -84,12 +178,12 @@
     <nav class="nav">
       <ul class="nav-left">
         <li class="links"><a href="#movies-section" X>Movies</a></li>
-        <li class="links"><a href="#events-section">Events</a></li>
         <li class="links"><a href="#premieres-section">Stream</a></li>
-        <li class="links"><a href="#plays">Plays</a></li>
-        <li class="links"><a href="#sports">Sports</a></li>
+        <li class="links"><a href="#events-section">Events</a></li>
+        <li class="links"><a href="#plays-section">Plays</a></li>
+        <li class="links"><a href="#sports-section">Sports</a></li>
         <li class="links">
-          <a href="#activities" class="links">Activities</a>
+          <a href="#activities-section" class="links">Activities</a>
         </li>
       </ul>
       <ul class="nav-right">
@@ -270,7 +364,7 @@
           />
           <div class="details">
             <p class="movie-name">Aquaman and the Lost Kingdom</p>
-            <p class="genre">Action/Adventure/Fantasy/<br />Superhero</p>
+            <p class="genre">Action/Adventure/Fantasy/Superhero</p>
           </div>
         </div>
       </div>
@@ -284,7 +378,7 @@
         />
       </div>
     </section>
-    <section class="live-events" id="events-section">
+    <section class="live-events">
       <div class="heading">
         <h2>The Best of Live Events</h2>
       </div>
@@ -391,7 +485,7 @@
         </div>
       </div>
     </section>
-    <section class="outdoor">
+    <section class="outdoor" id="events-section">
       <h2 class="events-heading">
         Outdoor Events <span class="new">NEW</span>
       </h2>
@@ -412,7 +506,7 @@
             class="oe-poster"
           />
           <span class="event-name"
-            >The Laughology Project<br />ft. Biswa and Varun 2024</span
+            >The Laughology Project ft. Biswa and Varun 2024</span
           >
           <span class="event-loc">DSL Virtue Mall: Uppal</span>
         </div>
@@ -423,7 +517,7 @@
             class="oe-poster"
           />
           <span class="event-name">Anaganaga</span>
-          <span class="event-loc">Our Sacred Space:<br />Hyderabad</span>
+          <span class="event-loc">Our Sacred Space:Hyderabad</span>
         </div>
         <div class="event-card">
           <img
@@ -432,7 +526,7 @@
             class="oe-poster"
           />
           <span class="event-name">Salar Jung Museum Visit</span>
-          <span class="event-loc">Salar Jung Museum:<br />Hyderabad</span>
+          <span class="event-loc">Salar Jung Museum:Hyderabad</span>
         </div>
         <div class="event-card">
           <img
@@ -440,9 +534,357 @@
             alt="Telugu Comedy Open mic"
             class="oe-poster"
           />
-          <span class="event-name">Telugu Comedy Open<br />mic</span>
-          <span class="event-loc">The Beanery Cafe:<br />Hyderabad</span>
+          <span class="event-name">Telugu Comedy Openmic</span>
+          <span class="event-loc">The Beanery Cafe:Hyderabad</span>
         </div>
+      </div>
+    </section>
+    <section class="plays" id="plays-section">
+      <h2 class="plays-heading">The Latest Plays</h2>
+      <div class="latest-plays">
+        <a
+          href="https://in.bookmyshow.com/plays/story-of-sahir-amrita-and-imroz/ET00383329"
+          class="play-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/story.avif"
+              alt="Story of Sahir, Amrita and Imroz"
+              class="play-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="play-title">
+              <div class="play-name">Story of Sahir, Amrita and Imroz</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="play-lang">English/Hindi</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/plays/main-pal-do-pal-ka-shair-hoon/ET00383102"
+          class="play-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/main pal.avif"
+              alt="Main Pal Do Pal Ka Shir Hoon"
+              class="play-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="play-title">
+              <div class="play-name">Main Pal Do Pal Ka Shir Hoon</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="play-lang">Hindi/Urdu</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/plays/indias-first-bubble-and-balloongrapher/ET00381803"
+          class="play-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/bubble.avif"
+              alt="Indias First Bubble and Balloon Show"
+              class="play-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="play-title">
+              <div class="play-name">Indias First Bubble and Balloon Show</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="play-lang">English/Hindi/Telugu</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/plays/petromax-panchayat/ET00382562"
+          class="play-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/petromax.avif"
+              alt="Petromax Panchayat"
+              class="play-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="play-title">
+              <div class="play-name">Petromax Panchayat</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="play-lang">Hindi</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/plays/dongala-bandi-by-samahaara/ET00384286"
+          class="play-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/dongalabandi.avif"
+              alt="DONGALA BANDI by Samahaara"
+              class="play-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="play-title">
+              <div class="play-name">DONGALA BANDI by Samahaara</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="play-lang">Telugu</div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="sports" id="sports-section">
+      <h2 class="sports-heading">Top Games & Sport Events</h2>
+      <div class="latest-sports">
+        <a
+          href="https://in.bookmyshow.com/sports/pro-kabaddi-season-10-telugu-titans/ET00382033"
+          class="sports-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/telugu titans.avif"
+              alt="Pro Kabaddi Season 10 Telugu Titans"
+              class="sports-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="sports-title">
+              <div class="sports-name">Pro Kabaddi Season 10 Telugu Titans</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="sports-venue">Mutliple Venues</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/sports/steelers-vs-dabang-delhi-and-titans-vs-thalaivas/ET00382032"
+          class="sports-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/steelers vs dd.avif"
+              alt="Steelers vs Dabang Delhi and Titans vs Thalaivas"
+              class="sports-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="sports-title">
+              <div class="sports-name">
+                Steelers vs Dabang Delhi and Titans vs Thalaivas
+              </div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="sports-venue">
+              GMC Balayogi Indoor Stadium: Hyderabad
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/sports/u-mumba-vs-puneri-paltan/ET00382031"
+          class="sports-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/mumbai vs pune.avif"
+              alt="U Mumba vs Puneri Paltan"
+              class="sports-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="sports-title">
+              <div class="sports-name">U Mumba vs Puneri Paltan</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="sports-venue">
+              GMC Balayogi Indoor Stadium: Hyderabad
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/sports/international-marathon-2024/ET00382627"
+          class="sports-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/marathon.avif"
+              alt="INTERNATIONAL Marathon 2024
+"
+              class="sports-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="sports-title">
+              <div class="sports-name">INTERNATIONAL Marathon 2024</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="sports-venue">Your Place and Your Time: India</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/sports/samurai-sudoku-championship-by-malsar/ET00339877"
+          class="sports-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/sudoku.avif"
+              alt="Samurai Sudoku Championship by Malsar"
+              class="sports-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="sports-title">
+              <div class="sports-name">
+                Samurai Sudoku Championship by Malsar
+              </div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="sports-venue">Watch on Zoom</div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="activities" id="activities-section">
+      <h2 class="activities-heading">Explore Fun Activities</h2>
+      <div class="latest-activities">
+        <a
+          href="https://in.bookmyshow.com/activities/winter-fest-studio-tour/ET00378564"
+          class="activities-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/winterfest.avif"
+              alt="WINTER FEST STUDIO TOUR"
+              class="activities-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="activities-title">
+              <div class="activities-name">WINTER FEST STUDIO TOUR</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="activities-venue">Ramoji Film City: Hyderabad</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/activities/day-outing-dream-valley-resorts/ET00367971"
+          class="activities-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/dayouting.avif"
+              alt="Day Outing @ Dream Valley Resorts"
+              class="activities-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="activities-title">
+              <div class="activities-name">
+                Day Outing @ Dream Valley Resorts
+              </div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="activities-venue">Dram Valley Resorts: Hyderabad</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/activities/snow-kingdom-hyderabad/ET00343461"
+          class="activities-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/snowkingdom.avif"
+              alt="
+              Snow Kingdom Hyderabad"
+              class="activities-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="activities-title">
+              <div class="activities-name">Snow Kingdom Hyderabad</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="activities-venue">Snow Kingdom: Hyderabad</div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/activities/wild-waters-amusement-theme-park-day-out-package/ET00305503"
+          class="activities-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/marathon.avif"
+              alt="Day Outing @ Wild Waters Amusement Park"
+              class="activities-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="activities-title">
+              <div class="activities-name">
+                Day Outing @ Wild Waters Amusement Park
+              </div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="activities-venue">
+              Wild Waters-Amusement & Water Theme Park: Hyderabad
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://in.bookmyshow.com/activities/day-outing-at-jalavihar-water-park/ET00378517"
+          class="activities-card"
+          target="_blank"
+        >
+          <div class="row-1">
+            <img
+              src="../Images/sudoku.avif"
+              alt="Day Outing at Jalavihar Water Park"
+              class="activities-poster"
+            />
+          </div>
+          <div class="row-2">
+            <div class="activities-title">
+              <div class="activities-name">
+                Day Outing at Jalavihar Water Park
+              </div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="activities-venue">Jalavihar Water Park: Hyderabad</div>
+          </div>
+        </a>
       </div>
     </section>
     <footer>
@@ -523,29 +965,75 @@
       <div class="third">
         <p>HELP</p>
         <ul class="help-links">
-          <li><a href="#about">About Us |</a></li>
-          <li><a href="#contact">&nbsp;Contact Us |</a></li>
-          <li><a href="#opening">&nbsp;Current Opening |</a></li>
-          <li><a href="#press">&nbsp;Press Release |</a></li>
-          <li><a href="#coverage">&nbsp;Press Coverage |</a></li>
-          <li><a href="#sitemap">&nbsp;Sitemap |</a></li>
-          <li><a href="#faq">&nbsp;FAQs |</a></li>
-          <li><a href="#terms">&nbsp;Terms and Conditions |</a></li>
-          <li><a href="#privacy">&nbsp;Privacy Policy</a></li>
+          <li><a href="https://in.bookmyshow.com/aboutus">About Us |</a></li>
+          <li>
+            <a href="https://in.bookmyshow.com/contactus">&nbsp;Contact Us |</a>
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/careers/"
+              >&nbsp;Current Opening |</a
+            >
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/press-release"
+              >&nbsp;Press Release |</a
+            >
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/press-coverage"
+              >&nbsp;Press Coverage |</a
+            >
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/static/sitemap"
+              >&nbsp;Sitemap |</a
+            >
+          </li>
+          <li><a href="https://in.bookmyshow.com/faq">&nbsp;FAQs |</a></li>
+          <li>
+            <a href="#https://in.bookmyshow.com/terms-and-conditions"
+              >&nbsp;Terms and Conditions |</a
+            >
+          </li>
+          <li>
+            <a href="#https://in.bookmyshow.com/privacy"
+              >&nbsp;Privacy Policy</a
+            >
+          </li>
         </ul>
       </div>
       <div class="fourth">
         <p>BOOKMYSHOW EXCLUSIVES</p>
         <ul class="help-links">
-          <li><a href="#palooza">Lollapalooza India |</a></li>
-          <li><a href="#superstar">&nbsp;Superstar |</a></li>
-          <li><a href="#smile">&nbsp;BookASmile |</a></li>
-          <li><a href="#vouchers">&nbsp;Corporate Vouchers |</a></li>
-          <li><a href="#giftcards">&nbsp;Gift Cards |</a></li>
-          <li><a href="#lms">&nbsp;List My Show |</a></li>
-          <li><a href="#offers">&nbsp;Offers |</a></li>
-          <li><a href="#stream">&nbsp;Stream |</a></li>
-          <li><a href="#trailers">&nbsp;Trailers</a></li>
+          <li><a href="https://lollaindia.com/">Lollapalooza India |</a></li>
+          <li>
+            <a href="https://in.bookmyshow.com/superstar">&nbsp;Superstar |</a>
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/donation">&nbsp;BookASmile |</a>
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/voucher"
+              >&nbsp;Corporate Vouchers |</a
+            >
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/giftcards">&nbsp;Gift Cards |</a>
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/s/list-your-show/"
+              >&nbsp;List My Show |</a
+            >
+          </li>
+          <li><a href="https://in.bookmyshow.com/offers">&nbsp;Offers |</a></li>
+          <li>
+            <a href="https://in.bookmyshow.com/explore/c/stream"
+              >&nbsp;Stream |</a
+            >
+          </li>
+          <li>
+            <a href="https://in.bookmyshow.com/trailers">&nbsp;Trailers</a>
+          </li>
         </ul>
       </div>
       <div class="fifth">
